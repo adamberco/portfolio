@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Touch Nums - Adam Bercovich</title>
+</head>
+
+<body onload="initGame()">
+    <h1>Welcom to Touch Nums</h1>
+    <h2>Click on the first number to start</h2>
+    <div class="board">
+        <table>
+            <thead>
+                <tr class="timer">
+                    <td colspan='6'>00.00.000</td>
+                </tr>
+                <tr class="size">
+                    <td colspan='6'>
+                        <form>
+                            <input type="radio" id="html" name="fav_language" value="HTML" onclick="easy()">
+                              <label for="html">Easy (16)</label>
+                              <input type="radio" id="css" name="fav_language" value="CSS" onclick="medium()">
+                              <label for="css">Medium (25)</label>
+                              <input type="radio" id="javascript" name="fav_language" value="JavaScript"
+                                onclick="hard()">
+                              <label for="javascript">Hard (36)</label>
+                        </form>
+                    </td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tr class="restart">
+                <td colspan='6'>
+                    <button onclick="restartGame()">Restart</button>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <script src="js/adam's - util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

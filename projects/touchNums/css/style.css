@@ -1,0 +1,107 @@
+h1{
+    font-size: 50px;
+}
+
+body{
+    text-align: center;
+    background-image: url(/pic/bg.jpg)
+}
+.board{    
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    }
+
+.board table{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.restart{
+    width: 400px;
+    height: 20px;
+    display: none;
+}
+
+.timer{
+    text-align: center;
+    background-color: black;
+    color: white ;
+    font-size: larger;
+
+}
+
+.timer td{
+    text-align: center;
+    margin: auto;
+
+    width: 100%;
+}
+
+
+.unpressed  {
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px; 
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+}
+
+ .unpressed:hover {background-color: #3e8e41}
+
+ .unpressed:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+
+.pressed {
+    background-color: rgb(251, 175, 175)
+}
+
+
+.pressed  {
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px; 
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    background-color:  rgb(251, 175, 175);
+    border: none;
+    border-radius: 15px;
+}
+
+.pressed:hover {background-color:  rgb(251, 175, 175)}
+
+.pressed:active {
+  background-color:  rgb(251, 175, 175);
+  transform: translateY(4px);
+}
+
+
+
+button  {
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px; 
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}

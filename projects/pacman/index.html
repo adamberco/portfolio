@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PACMAN - Adam Bercovich</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body onkeyup="movePacman(event)">
+    <h2>Score: <span>0</span></h2>
+    <div class="board-container"></div>
+    <div class="modal-container">
+        <div class="modal"><span><button class="restart-btn" onclick="init()">Start Game</button>
+                <h2 class="msg">Welcom to the haunted House! <br> help Pacman to eat his way out</h2>
+            </span></div>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/pacman.js"></script>
+    <script src="js/ghost.js"></script>
+</body>
+
+</html>

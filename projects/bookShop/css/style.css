@@ -1,0 +1,165 @@
+body {
+  background-image: linear-gradient(160deg, #259487 10%, #00e908 100%);
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px 5px rgb(6, 95, 24);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  background-color: #eeeeee;
+  color: #0a4a00;
+  width: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 300px;
+}
+
+table.comicGreen {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #0a4a00;
+  background-color: #eeeeee;
+  border-collapse: collapse;
+}
+table.comicGreen td,
+table.comicGreen th {
+  border: 1px solid #0a4a00;
+  padding: 8px 8px;
+  transition: 0.3s;
+}
+
+table.comicGreen thead {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000;
+  background: #cee0cc;
+}
+
+table.comicGreen tbody td {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #0a4a00;
+}
+table.comicGreen tr:nth-child(even) {
+  background: #cee0cc;
+}
+
+.add-book-container {
+  display: inline-block;
+}
+
+.add-price {
+  width: 80px;
+}
+
+.add-title {
+  width: 120px;
+}
+
+.delete {
+  box-shadow: inset 0px 1px 0px 0px #aa2525;
+  background: linear-gradient(to bottom, #f12020 5%, #bd0505 100%);
+  background-color: #f12020;
+  border-radius: 6px;
+  border: 1px solid #880b0b;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #a32929;
+}
+.delete:hover {
+  background: linear-gradient(to bottom, #bd0505 5%, #f12020 100%);
+  background-color: #bd0505;
+}
+.delete:active {
+  position: relative;
+  top: 1px;
+}
+
+.add {
+  margin-right: 15px;
+  background: linear-gradient(to bottom, #77d42a 5%, #0a4a00 100%);
+  background-color: #77d42a;
+  border-radius: 6px;
+  border: 1px solid #268a16;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #aade7c;
+}
+.add:hover {
+  background: linear-gradient(to bottom, #0a4a00 5%, #77d42a 100%);
+  background-color: #5cb811;
+}
+.add:active {
+  position: relative;
+  top: 1px;
+}
+
+.modal {
+  background-color: #ffffff;
+  background: linear-gradient(to bottom, #0a4a00 5%, #7b9a76 100%);
+  padding: 5px;
+  position: fixed;
+  bottom: -800px;
+  height: 90%;
+  width: 300px;
+  text-align: center;
+  transition: 0.9s;
+  border-radius: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.modal h3,
+h4 {
+  margin: 5px;
+}
+
+.open {
+  bottom: 10px;
+}
+
+.rate {
+  width: 20px;
+}
+
+.update-price {
+  width: 30px;
+}
+
+.price-span:hover {
+  color: rgb(100, 201, 100);
+  cursor: pointer;
+}
+
+.title:hover {
+  color: rgb(100, 201, 100);
+  cursor: pointer;
+}
+
+.fillter:hover {
+  transform: scale(1.1);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.mark {
+  background-color: rgb(209, 209, 209);
+}
