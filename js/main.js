@@ -1,6 +1,16 @@
-console.log('Starting up');
+'use strict'
 
-renderPortfolio()
+$(init)
+
+function init() {
+  renderPortfolio()
+  $('.submit').click(onContactMe)
+  $('.offcanvas-btn').click(openCanvas)
+  $('.contact').click(openCanvas)
+  // $('.contact-me-modal').mouseleave(openCanvas)
+  $('.offcanvas-aside').mouseleave(openCanvas)
+
+}
 
 function renderPortfolio() {
   const projects = getProjects()
@@ -66,4 +76,13 @@ function renderModal(projId) {
         </div>`
 
   $('.modals').html(strHtml)
+}
+
+function onContactMe() {
+  var email = $('.email').val();
+  var subject = $('.subject').val();
+  var massage = $('.massage').val();
+  var url = `https://mail.google.com/mail/?view=cm&fs=1&to=adamberco@gmail.com&su=${subject}&body=${massage}${email}`
+  window.open(url, '_blank').focus();
+  console.log('url', url)
 }
